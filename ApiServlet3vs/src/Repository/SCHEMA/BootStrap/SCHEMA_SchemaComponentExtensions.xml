@@ -1,0 +1,1699 @@
+<Container CompSchema="" Scope="" SoftwareVersion="04.02.00.14" IObject_ContainerID="BootStrap.SchemaComponentExtensions" IObject_OBID="Auto" IObject_CreationDate="Now" IObject_TerminationDate="9999/12/31-23:59:59:999" IObject_LastUpdatedDate="Now" IObject_CreationUser="superuser" IObject_DomainUID="Auto" IObject_UniqueKey="Auto" IRel_DomainUID1="Auto" IRel_DomainUID2="Auto" >
+  <Rel>
+    <IObject UID="IPropertyDefExt.Exposes.NotSerialized" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IPropertyDefExt" IsRequired="False" DefUID="Exposes" UID2="NotSerialized" OrderValue="10" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPreHandlerUIDAndOrMethodDefUID.Exposes" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFEdgeDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFPreHandlerUIDAndOrMethodDefUID" OrderValue="40" />
+  </Rel>
+  <Rel>
+    <IObject UID="DomainUID1.string" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="DomainUID1" IsRequired="False" DefUID="ScopedBy" UID2="string64" />
+  </Rel>
+  <EnumEnum>
+    <IObject UID="e1Disabled" Name="Disabled" Description="Can't create or relate objects across this relationship" />
+    <IEnumEnum EnumNumber="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="CreationDate.SPFDateTime" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="CreationDate" IsRequired="False" DefUID="ScopedBy" UID2="SPFDateTime" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFFTREnabled.ScopedBy.Boolean" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFFTREnabled" IsRequired="False" DefUID="ScopedBy" UID2="boolean" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="NotSerialized" Name="NotSerialized" Description="This property is not serialized." />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="IInterfaceDefImpliesIInterfaceDefExt" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IInterfaceDef" IsRequired="False" DefUID="Implies" UID2="IInterfaceDefExt" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFDocCompSchema.ISchemaObj" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFDocCompSchema" IsRequired="True" DefUID="Realizes" UID2="ISchemaObj" OrderValue="100" />
+  </Rel>
+  <Rel>
+    <IObject UID="EventDef.Realizes.INotificationEventDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="EventDef" IsRequired="False" DefUID="Realizes" UID2="INotificationEventDef" OrderValue="20" />
+  </Rel>
+  <Rel>
+    <IObject UID="NotSerialized.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="NotSerialized" IsRequired="False" DefUID="ScopedBy" UID2="boolean" />
+  </Rel>
+  <Rel>
+    <IObject UID="UniqueKey.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="UniqueKey" IsRequired="False" DefUID="ScopedBy" UID2="string128" />
+  </Rel>
+  <Rel>
+    <IObject UID="{B74EDB64-FB78-4CD0-9360-F9FF43FA6476}" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFClassDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFIsConfigurationControlled" OrderValue="1" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="SPFIsConfigurationControlled" Name="SPFIsConfigurationControlled" Description="The object is created and managed by the configuration tree" />
+    <IPropertyDef />
+    <ISchemaObj DisplayName="Конфигурация Управляемая" SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="SubscriptionDefPrimaryInterfaceISubscriptionDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SubscriptionDef" DefUID="PrimaryInterface" UID2="ISubscriptionDef" />
+  </Rel>
+  <Rel>
+    <IObject UID="IRel.Implies.ISPFDefinesNotification" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.03.00" />
+    <IRel UID1="IRel" IsRequired="False" DefUID="Implies" UID2="ISPFDefinesNotification" />
+  </Rel>
+  <Rel>
+    <IObject UID="IObject.UniqueKey" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IObject" IsRequired="False" DefUID="Exposes" UID2="UniqueKey" OrderValue="31" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="EdgeRole" Name="EdgeRole" Description="Role name for the Edge" />
+    <IPropertyDef />
+    <ISchemaObj DisplayName="Роль ребра" SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="IPropertyDefImpliesIPropertyDefExt" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IPropertyDef" IsRequired="False" DefUID="Implies" UID2="IPropertyDefExt" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFRelDefExt.SPFToolCreate12" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFRelDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFToolCreate12" OrderValue="60" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFRelDefExt.Includes21" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFRelDefExt" IsRequired="False" DefUID="Exposes" UID2="Includes21" OrderValue="31" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPrgCompSchema.IEnumMetadata" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFPrgCompSchema" IsRequired="True" DefUID="Realizes" UID2="IEnumMetadata" OrderValue="20" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFDirection.e1Dir21" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFDirection" DefUID="Contains" UID2="e1Dir21" />
+  </Rel>
+  <Rel>
+    <IObject UID="e1ToolBehaviour.Contains.e1CreateOrRelate" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="e1ToolBehaviour" DefUID="Contains" UID2="e1CreateOrRelate" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPostHandlerUIDAndOrMethodDefUID.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFPostHandlerUIDAndOrMethodDefUID" IsRequired="False" DefUID="ScopedBy" UID2="string128" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFClassDefExt.SPFUIDDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFClassDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFUIDDef" OrderValue="2" />
+  </Rel>
+  <Rel>
+    <IObject UID="OBID2.string" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="OBID2" IsRequired="False" DefUID="ScopedBy" UID2="string64" />
+  </Rel>
+  <RelDef>
+    <IObject UID="InterfaceDefToInterfaceDef" Name="InterfaceDefToInterfaceDef" Description="" />
+    <IRelDef2 Delete12="False" FilterEdge21="True" Delete21="False" FilterEdge12="True" />
+    <IRelDef End1Locality="AcrossComponent" Max2="*" Max1="*" Min1="0" Role1="InterfaceDefToInterfaceDef\FromInterfaceDef" Role2="InterfaceDefToInterfaceDef\ToInterfaceDef" SpecOfUID="ClassToClass" LinkInterfaces="IMapRel" UsesMapping="False" End2Locality="AcrossComponent" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IInterfaceDef" UID2="IInterfaceDef" />
+  </RelDef>
+  <Rel>
+    <IObject UID="AllowUoMValueAsText.ScopedBy.boolean" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="AllowUoMValueAsText" IsRequired="False" DefUID="ScopedBy" UID2="boolean" />
+  </Rel>
+  <Rel>
+    <IObject UID="TerminationUser.string" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="TerminationUser" IsRequired="False" DefUID="ScopedBy" UID2="string64" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="SPFFTREnabled" Name="SPFFTREnabled" Description="Enable FTR" />
+    <IPropertyDef />
+    <ISchemaObj DisplayName="Включить КлассОпр для FTR?" SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="SubscriptionDefRealizesISubscriptionDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SubscriptionDef" IsRequired="True" DefUID="Realizes" UID2="ISubscriptionDef" OrderValue="10" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFDefinesNotification.Implies.IObject" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.03.00" />
+    <IRel UID1="ISPFDefinesNotification" IsRequired="False" DefUID="Implies" UID2="IObject" />
+  </Rel>
+  <Rel>
+    <IObject UID="IObjectExposesTerminationUser" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IObject" IsRequired="False" DefUID="Exposes" UID2="TerminationUser" OrderValue="91" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="SPFSubscribedObjectInterfaceDefUID" Name="SPFSubscribedObjectInterfaceDefUID" Description="Subscribed Object's InterfaceDef UID" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <PropertyDef>
+    <IObject UID="SPFMapFunctionToInvoke" Name="SPFMapFunctionToInvoke" Description="" />
+    <IMappableProperty />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="Сопоставление Функция В Запуск" />
+  </PropertyDef>
+  <PropertyDef>
+    <IObject UID="Owner12" Name="Owner12" Description="Object 1 owns this relationship" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <PropertyDef>
+    <IObject UID="SPFMergeInterface" Name="SPFMergeInterface" Description="Defines behaviour when merging an interface" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="ISPFEdgeDefExtImpliesISchemaObj" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFEdgeDefExt" IsRequired="True" DefUID="Implies" UID2="ISchemaObj" />
+  </Rel>
+  <EnumListType>
+    <IObject UID="e1ToolBehaviour" Name="ToolBehaviour" Description="Tool Behaviour" />
+    <IPropertyType />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IEnumListType />
+  </EnumListType>
+  <EnumEnum>
+    <IObject UID="e1OptionalObj" Name="OptionalObj" Description="Optional claim the object on the other side" />
+    <IEnumEnum EnumNumber="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="SPFPrgCompSchema.IObject" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFPrgCompSchema" IsRequired="True" DefUID="Realizes" UID2="IObject" OrderValue="1" />
+  </Rel>
+  <InterfaceDef>
+    <IObject UID="ISPFRelDefExt" Name="ISPFRelDefExt" Description="Relationship Definition Extension" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="SPFRelDefExt" SpecializationValue="100" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="Relationship Definition Extension" />
+    <IPropCategory PropCategory="e1SPF_Extensions" />
+  </InterfaceDef>
+  <RelDef>
+    <IObject UID="SPFInterfaceDefViewDef" Name="SPFInterfaceDefViewDef" Description="Relationship to control the ViewDefs that are displayed in the properties grid" />
+    <IRelDef2 FilterEdge21="False" FilterEdge12="False" />
+    <IRelDef End1Locality="AcrossComponent" Max2="*" Role2DisplayName="Вид-Определение" Max1="*" Min1="0" Role1="Interface Definition" Role2="View Definition" LinkInterfaces="ISPFInterfaceDefViewDef" Role1DisplayName="Интерфейс-Определение" End2Locality="AcrossComponent" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IInterfaceDef" UID2="IViewDef" />
+  </RelDef>
+  <InterfaceDef>
+    <IObject UID="ISubscribableEventDef" Name="ISubscribableEventDef" Description="Subscribable Event Definition" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="SubscribableEventDef" SpecializationValue="100" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="Subscribable Event Definition" />
+    <IPropCategory PropCategory="Miscellaneous" />
+  </InterfaceDef>
+  <PropertyDef>
+    <IObject UID="CreationDate" Name="CreationDate" Description="Creation Date" />
+    <IPropertyDef />
+    <IPropertyDefExt HistoryNotRetained="True" />
+    <ISchemaObj DisplayName="Дата создания" SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="SPFReportDefObjStructure.ScopedBy.String" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFReportDefObjStructure" IsRequired="False" DefUID="ScopedBy" UID2="string" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="TerminationDate" Name="TerminationDate" Description="Termination Date" />
+    <IPropertyDef />
+    <IPropertyDefExt HistoryNotRetained="True" />
+    <ISchemaObj DisplayName="Дата удаления" SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="MetaModel.SubscriptionDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="MetaModel" DefUID="ModelClass" UID2="SubscriptionDef" />
+  </Rel>
+  <Rel>
+    <IObject UID="IEventDef.Implies.ISubscribableEventDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IEventDef" IsRequired="False" DefUID="Implies" UID2="ISubscribableEventDef" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFRelDefExt.Owner12" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFRelDefExt" IsRequired="False" DefUID="Exposes" UID2="Owner12" OrderValue="40" />
+  </Rel>
+  <InterfaceDef>
+    <IObject UID="ISPFRelDefMapsTo" Name="ISPFRelDefMapsTo" Description="RelDef Maps To PropertyDef" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="RelDefMapsTo" SpecializationValue="100" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="SPFRelDefMapsTo" />
+    <IPropCategory PropCategory="Miscellaneous" />
+  </InterfaceDef>
+  <Rel>
+    <IObject UID="Claim12.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="Claim12" IsRequired="False" DefUID="ScopedBy" UID2="SPFEnumList-001" />
+  </Rel>
+  <Rel>
+    <IObject UID="IObjectExposesCreationUser" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IObject" IsRequired="False" DefUID="Exposes" UID2="CreationUser" OrderValue="61" />
+  </Rel>
+  <EnumEnum>
+    <IObject UID="e1HVAC" Name=";HVAC" Description="" />
+    <IEnumEnum EnumNumber="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="ISubscriptionDef.SPFSubscribedObjectCondition" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISubscriptionDef" IsRequired="False" DefUID="Exposes" UID2="SPFSubscribedObjectCondition" OrderValue="30" />
+  </Rel>
+  <ClassDef>
+    <IObject UID="SPFPrgCompSchema" Name="SPFPrgCompSchema" Description="Progress Component Schema" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="" />
+    <IClassDef />
+  </ClassDef>
+  <Rel>
+    <IObject UID="SPFMapFunctionDef.IObject" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFMapFunctionDef" IsRequired="True" DefUID="Realizes" UID2="IObject" OrderValue="1" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="OBID2" Name="OBID2" Description="OBID 2" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="DomainUID.string" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="DomainUID" IsRequired="True" DefUID="ScopedBy" UID2="string64" />
+  </Rel>
+  <EnumListType>
+    <IObject UID="SPFEnumList-001" Name="SPFClaimOptions" Description="Claim Options" />
+    <IPropertyType />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IEnumListType />
+  </EnumListType>
+  <Rel>
+    <IObject UID="ISPFViewDefExt.Implies.ISchemaObj" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFViewDefExt" IsRequired="True" DefUID="Implies" UID2="ISchemaObj" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFEnumList-001-1" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFEnumList-001" DefUID="Contains" UID2="e1DontClaim" />
+  </Rel>
+  <InterfaceDef>
+    <IObject UID="ISPFEdgeDefExt" Name="ISPFEdgeDefExt" Description="Edge Definition Extension" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="SPFEdgeDefExt" SpecializationValue="100" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="Edge Definition Extension" />
+    <IPropCategory PropCategory="e1SPF_Extensions" />
+  </InterfaceDef>
+  <Rel>
+    <IObject UID="ISPFClassDefExt.SPFUniqueKeyDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFClassDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFUniqueKeyDef" OrderValue="20" />
+  </Rel>
+  <InterfaceDef>
+    <IObject UID="ISPFMapFunctionDef" Name="ISPFMapFunctionDef" Description="" />
+    <IMappableClass />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="SPFMapFunctionDef" SpecializationValue="80" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="Map Function Definition" />
+    <IPropCategory />
+  </InterfaceDef>
+  <RelDef>
+    <IObject UID="PropertyDefToPropertyDef" Name="PropertyDefToPropertyDef" Description="" />
+    <IRelDef2 Delete21="False" FilterEdge21="True" Delete12="False" FilterEdge12="True" />
+    <IRelDef End1Locality="AcrossComponent" LinkInterfaces="IMapRel" Min1="0" Max2="*" Role2="PropertyDefToPropertyDef\ToPropertyDef" Role1="PropertyDefToPropertyDef\FromPropertyDef" Max1="*" SpecOfUID="PropertyToProperty" UsesMapping="False" End2Locality="AcrossComponent" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IPropertyDef" UID2="IPropertyDef" />
+  </RelDef>
+  <PropertyDef>
+    <IObject UID="Owner21" Name="Owner21" Description="Object 2 owns this relationship" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <PropertyDef>
+    <IObject UID="SPFUniqueKeyDef" Name="SPFUniqueKeyDef" Description="Unique key definition" />
+    <IPropertyDef />
+    <ISchemaObj DisplayName="Определение Уникального Ключа" SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="IEdgeDef.ISPFEdgeDefExt" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IEdgeDef" IsRequired="False" DefUID="Implies" UID2="ISPFEdgeDefExt" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="ContainerID" Name="ContainerID" Description="Container ID" />
+    <IPropertyDef />
+    <IPropertyDefExt HistoryNotRetained="True" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="Контейнер" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="SPFCascade21.ScopedBy.string" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFCascade21" IsRequired="False" DefUID="ScopedBy" UID2="string128" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFClassDefExtImpliesISchemaObj" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFClassDefExt" IsRequired="True" DefUID="Implies" UID2="ISchemaObj" />
+  </Rel>
+  <Rel>
+    <IObject UID="DomainUID2.string" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="DomainUID2" IsRequired="False" DefUID="ScopedBy" UID2="string64" />
+  </Rel>
+  <Rel>
+    <IObject UID="IEventDef.Implies.INotificationEventDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IEventDef" IsRequired="False" DefUID="Implies" UID2="INotificationEventDef" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPreRelDefExpansion.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFPreRelDefExpansion" IsRequired="False" DefUID="ScopedBy" UID2="string128" />
+  </Rel>
+  <InterfaceDef>
+    <IObject UID="ISPFPrgCompSchema" Name="ISPFPrgCompSchema" Description="Progress Component Schema" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="PrgCompSchema" SpecializationValue="100" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="Progress Component Schema" />
+    <IPropCategory PropCategory="Miscellaneous" />
+  </InterfaceDef>
+  <Rel>
+    <IObject UID="INotificationEventDef.Implies.ISchemaObj" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="INotificationEventDef" IsRequired="False" DefUID="Implies" UID2="ISchemaObj" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="Claim21" Name="Claim21" Description="Claim this relationship if object 2 is claimed" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <EnumEnum>
+    <IObject UID="e1Dir21" Name="21" Description="Backwards (end 2 to end 1)" />
+    <IEnumEnum EnumNumber="0" />
+    <ISchemaObj HelpContextID="413" SchemaRevVer="04.00.00" />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="ISubscriptionDef.MethodHandlerObjectUID" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISubscriptionDef" IsRequired="False" DefUID="Exposes" UID2="MethodHandlerObjectUID" OrderValue="30" />
+  </Rel>
+  <ClassDef>
+    <IObject UID="SPFDocCompSchema" Name="SPFDocCompSchema" Description="Document Component Schema" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="" />
+    <IClassDef />
+  </ClassDef>
+  <RelDef>
+    <IObject UID="SPFClassDefDefaultGraphDef" Name="SPFClassDefDefaultGraphDef" Description="ClassDef has default graph definition" />
+    <IRelDef2 FilterEdge12="False" FilterEdge21="False" />
+    <IRelDef End1Locality="AcrossComponent" Max2="*" Max1="*" Min1="0" Role1="Default Graph Class Definitions" Role2="Default Graph Definitions" End2Locality="AcrossComponent" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IClassDef" UID2="IDirectedGraphDef" />
+  </RelDef>
+  <Rel>
+    <IObject UID="ISPFViewDefExt.Exposes.SPFReportDefObjStructure" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFViewDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFReportDefObjStructure" OrderValue="10" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFRelDefExt.Claim12" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFRelDefExt" IsRequired="False" DefUID="Exposes" UID2="Claim12" OrderValue="10" />
+  </Rel>
+  <EnumEnum>
+    <IObject UID="e1SPF_Extensions" Name="SPF Extensions" Description="SPF Extensionsp" />
+    <IEnumEnum EnumNumber="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="CreationUser.string" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="CreationUser" IsRequired="False" DefUID="ScopedBy" UID2="string64" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFUniqueKeyDef.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFUniqueKeyDef" IsRequired="False" DefUID="ScopedBy" UID2="string128" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="SPFCascade12" Name="SPFCascade12" Description="Defines the cascade name for the relationship12, supports #nnnn where nnnn is value in client resource file." />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="Includes12.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="Includes12" IsRequired="False" DefUID="ScopedBy" UID2="boolean" />
+  </Rel>
+  <Rel>
+    <IObject UID="RelDef.ISPFRelDefExt" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="RelDef" IsRequired="False" DefUID="Realizes" UID2="ISPFRelDefExt" OrderValue="20" />
+  </Rel>
+  <RelDef>
+    <IObject UID="SubscribesTo" Name="SubscribesTo" Description="Subscription definition used by an event" />
+    <IRelDef2 FilterEdge21="False" FilterEdge12="False" />
+    <IRelDef End1Locality="AcrossComponent" Max2="1" Min1="0" Role2="Subscribed Event" Max1="*" Role1="Subscribed By" End2Locality="Container" Min2="1" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISubscriptionDef" UID2="IEventDef" />
+  </RelDef>
+  <Rel>
+    <IObject UID="Rel.ISPFRelDefMapsTo" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="Rel" IsRequired="False" DefUID="Realizes" UID2="ISPFRelDefMapsTo" OrderValue="208" />
+  </Rel>
+  <Rel>
+    <IObject UID="MetaSchema.SPFMapFunctionDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="MetaSchema" DefUID="Componentization" UID2="SPFMapFunctionDef" />
+  </Rel>
+  <InterfaceDef>
+    <IObject UID="IEventDef" Name="IEventDef" Description="Event Definition" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="EventDef" SpecializationValue="90" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="Event Definition" />
+    <IPropCategory PropCategory="Miscellaneous" />
+  </InterfaceDef>
+  <PropertyDef>
+    <IObject UID="SPFPostHandlerUIDAndOrMethodDefUID" Name="SPFPostHandlerUIDAndOrMethodDefUID" Description="UID to identify object or source then MethodDef to call" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="ISubscribableEventDef.IncludeISubscribableEventDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISubscribableEventDef" IsRequired="False" DefUID="Exposes" UID2="IncludeISubscribableEventDef" OrderValue="2" />
+  </Rel>
+  <Rel>
+    <IObject UID="EdgeRole.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="EdgeRole" IsRequired="False" DefUID="ScopedBy" UID2="string64" />
+  </Rel>
+  <Rel>
+    <IObject UID="IRelExposesOBID2" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IRel" IsRequired="False" DefUID="Exposes" UID2="OBID2" OrderValue="22" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="SPFEventDefDisplayAs" Name="SPFEventDefDisplayAs" Description="Display name for the event" />
+    <IPropertyDef />
+    <ISchemaObj DisplayName="Показать SPF-событие Как" SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <PropertyDef>
+    <IObject UID="SPFPreHandlerUIDAndOrMethodDefUID" Name="SPFPreHandlerUIDAndOrMethodDefUID" Description="UID to identify object or source then MethodDef to call" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="e1ToolBehaviour.Contains.e1RelateOnly" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="e1ToolBehaviour" DefUID="Contains" UID2="e1RelateOnly" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="SPFFTRIndicator" Name="SPFFTRIndicator" Description="FTR indicator" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="FTR  индикатор" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="IPropertyDefExtImpliesISchemaObj" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IPropertyDefExt" IsRequired="True" DefUID="Implies" UID2="ISchemaObj" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFDocCompSchema.ISPFDocCompSchema.PI" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFDocCompSchema" DefUID="PrimaryInterface" UID2="ISPFDocCompSchema" />
+  </Rel>
+  <InterfaceDef>
+    <IObject UID="ISPFViewDefExt" Name="ISPFViewDefExt" Description="View Definition Extension" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="ViewDef" SpecializationValue="100" />
+    <ISchemaObj DisplayName="View Definition Extension" />
+    <IPropCategory PropCategory="e1SPF_Extensions" />
+  </InterfaceDef>
+  <Rel>
+    <IObject UID="MetaModel.SPFPrgCompSchema" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="MetaModel" DefUID="ModelClass" UID2="SPFPrgCompSchema" />
+  </Rel>
+  <Rel>
+    <IObject UID="MethodHandlerObjectUID.string" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="MethodHandlerObjectUID" IsRequired="False" DefUID="ScopedBy" UID2="string64" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISubscriptionDefImpliesISchemaObj" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISubscriptionDef" IsRequired="True" DefUID="Implies" UID2="ISchemaObj" />
+  </Rel>
+  <ClassDef>
+    <IObject UID="SubscriptionDef" Name="SubscriptionDef" Description="Subscription Definition" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="" />
+    <IClassDef />
+  </ClassDef>
+  <Rel>
+    <IObject UID="PropCategories.e1HangersSupportsHVACManufacturingFabricationConstruction" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="PropCategories" DefUID="Contains" UID2="e1HangersSupportsHVACManufacturingFabricationConstruction" />
+  </Rel>
+  <Rel>
+    <IObject UID="IObject.LastUpdatedDate" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IObject" IsRequired="True" DefUID="Exposes" UID2="LastUpdatedDate" OrderValue="80" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFRelDefExt.Claim21" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFRelDefExt" IsRequired="False" DefUID="Exposes" UID2="Claim21" OrderValue="11" />
+  </Rel>
+  <Rel>
+    <IObject UID="IPropertyDefExt.Exposes.AllowUoMValueAsText" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IPropertyDefExt" IsRequired="False" DefUID="Exposes" UID2="AllowUoMValueAsText" OrderValue="10" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="SPFEdgeCascade" Name="SPFEdgeCascade" Description="Defines the cascade name for the Edge, supports #nnnn where nnnn is value in client resource file." />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="SPFDocCompSchema.ISPFDocCompSchema" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFDocCompSchema" IsRequired="True" DefUID="Realizes" UID2="ISPFDocCompSchema" OrderValue="10" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFSubscribedObjectInterfaceDefUID.string" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFSubscribedObjectInterfaceDefUID" IsRequired="False" DefUID="ScopedBy" UID2="string64" />
+  </Rel>
+  <Rel>
+    <IObject UID="IRel.DomainUID2" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IRel" IsRequired="True" DefUID="Exposes" UID2="DomainUID2" OrderValue="21" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="IncludeISubscribableEventDef" Name="IncludeISubscribableEventDef" Description="Determines whether ISubscribableEventDef is to be included on object" />
+    <IPropertyDef />
+    <ISchemaObj DisplayName="Поддерживает Подписку?" SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <InterfaceDef>
+    <IObject UID="ISubscriptionDef" Name="ISubscriptionDef" Description="Subscription Definition" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="SubscriptionDef" SpecializationValue="90" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="Subscription Definition" />
+    <IPropCategory PropCategory="Miscellaneous" />
+  </InterfaceDef>
+  <EnumEnum>
+    <IObject UID="e1CreateOrRelate" Name="CreateOrRelate" Description="Can create or relate objects across this relationship" />
+    <IEnumEnum EnumNumber="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="EdgeDef.ISPFEdgeDefExt" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="EdgeDef" IsRequired="False" DefUID="Realizes" UID2="ISPFEdgeDefExt" OrderValue="201" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPostRelDefExpansion.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFPostRelDefExpansion" IsRequired="False" DefUID="ScopedBy" UID2="string128" />
+  </Rel>
+  <Rel>
+    <IObject UID="{2A7553D2-9662-4CB9-BA42-604DB45ED07C}" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFClassDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFDependantConfiguration" OrderValue="3" />
+  </Rel>
+  <Rel>
+    <IObject UID="LastUpdatedDate.SPFDateTime" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="LastUpdatedDate" IsRequired="False" DefUID="ScopedBy" UID2="SPFDateTime" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFMergeInterface.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFMergeInterface" IsRequired="False" DefUID="ScopedBy" UID2="e1ClaimMergeBehaviour" />
+  </Rel>
+  <Rel>
+    <IObject UID="TerminationDate.SPFDateTime" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="TerminationDate" IsRequired="False" DefUID="ScopedBy" UID2="SPFDateTime" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="SPFDependantConfiguration" Name="SPFDependantConfiguration" Description="Dependant configuration" />
+    <IPropertyDef />
+    <ISchemaObj DisplayName="Зависимая конфигурация" SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="ForceNullConfig.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ForceNullConfig" IsRequired="False" DefUID="ScopedBy" UID2="boolean" />
+  </Rel>
+  <Rel>
+    <IObject UID="SubscriptionDefRealizesIObject" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SubscriptionDef" IsRequired="True" DefUID="Realizes" UID2="IObject" OrderValue="1" />
+  </Rel>
+  <Rel>
+    <IObject UID="IRel.ISPFTEFPublishedItem" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IRel" IsRequired="False" DefUID="Implies" UID2="ISPFTEFPublishedItem" />
+  </Rel>
+  <Rel>
+    <IObject UID="IObjectExposesTerminationDate" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IObject" IsRequired="True" DefUID="Exposes" UID2="TerminationDate" OrderValue="90" />
+  </Rel>
+  <Rel>
+    <IObject UID="{98E403F7-76BF-480A-BB86-86E34BBBB2ED}" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="Rel" IsRequired="False" DefUID="Realizes" UID2="IIncludes" OrderValue="202" />
+  </Rel>
+  <Rel>
+    <IObject UID="INotificationEventDef.IncludeINotificationEventDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="INotificationEventDef" IsRequired="False" DefUID="Exposes" UID2="IncludeINotificationEventDef" OrderValue="2" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFExtFactory.SPFPrgCompSchema" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFExtFactory" DefUID="Instantiates" UID2="SPFPrgCompSchema" />
+  </Rel>
+  <RelDef>
+    <IObject UID="SPFTEFSharedMappedInterface" Name="SPFTEFSharedMappedInterface" Description="TEF shared object interface mapping" />
+    <IRelDef2 FilterEdge21="True" FilterEdge12="True" />
+    <IRelDef End1Locality="AcrossComponent" Max2="*" Max1="1" Min1="0" Role1="Interface Definition" Role2="Mapped Interface" End2Locality="Container" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IInterfaceDef" UID2="IInterfaceDef" />
+  </RelDef>
+  <Rel>
+    <IObject UID="SPFPrgCompSchema.ISPFPrgCompSchema" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFPrgCompSchema" IsRequired="True" DefUID="Realizes" UID2="ISPFPrgCompSchema" OrderValue="10" />
+  </Rel>
+  <Rel>
+    <IObject UID="EventDefRealizesISchemaObj" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="EventDef" IsRequired="True" DefUID="Realizes" UID2="ISchemaObj" OrderValue="100" />
+  </Rel>
+  <EnumEnum>
+    <IObject UID="e1InterfaceRelsAndProps" Name="InterfaceRelsAndProps" Description="Claim/merge the interface rels and properties" />
+    <IEnumEnum EnumNumber="1" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="SPFEnumList-001-2" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFEnumList-001" DefUID="Contains" UID2="e1ReqdObj" />
+  </Rel>
+  <Rel>
+    <IObject UID="{B670B185-6246-422C-B7BD-01B25305DA4E}" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ClassDef" IsRequired="False" DefUID="Realizes" UID2="ISPFClassDefExt" OrderValue="201" />
+  </Rel>
+  <Rel>
+    <IObject UID="IObjectExposesConfig" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IObject" IsRequired="False" DefUID="Exposes" UID2="Config" OrderValue="40" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFRelDefExt.Owner21" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFRelDefExt" IsRequired="False" DefUID="Exposes" UID2="Owner21" OrderValue="41" />
+  </Rel>
+  <RelDef>
+    <IObject UID="SPFClassDefDefaultEdgeDef" Name="SPFClassDefDefaultEdgeDef" Description="ClassDef has default edge definition" />
+    <IRelDef2 FilterEdge21="False" FilterEdge12="False" />
+    <IRelDef End1Locality="AcrossComponent" Max2="*" Role2="Default Edge Definitions" Min1="0" Role1="Default Edge Class Definitions" Max1="*" End2Locality="AcrossComponent" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IClassDef" UID2="IEdgeDef" />
+  </RelDef>
+  <Rel>
+    <IObject UID="DeleteTransitions.e1Deleted" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="DeleteTransitions" DefUID="Contains" UID2="e1Deleted" />
+  </Rel>
+  <InterfaceDef>
+    <IObject UID="INotificationEventDef" Name="INotificationEventDef" Description="Notification Event Definition" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="NotificationEventDef" SpecializationValue="100" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="Notification Event Definition" />
+    <IPropCategory PropCategory="Miscellaneous" />
+  </InterfaceDef>
+  <Rel>
+    <IObject UID="IObjectExposesCreationDate" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IObject" IsRequired="True" DefUID="Exposes" UID2="CreationDate" OrderValue="60" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="DomainUID1" Name="DomainUID1" Description="Domain UID 1" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="ContainerID.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ContainerID" IsRequired="False" DefUID="ScopedBy" UID2="string16" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFClaimInterface.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFClaimInterface" IsRequired="False" DefUID="ScopedBy" UID2="e1ClaimMergeBehaviour" />
+  </Rel>
+  <Rel>
+    <IObject UID="MetaSchema.EventDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="MetaSchema" DefUID="Componentization" UID2="EventDef" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFInterfaceDefViewDef.IObject" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFInterfaceDefViewDef" IsRequired="True" DefUID="Implies" UID2="IObject" />
+  </Rel>
+  <Rel>
+    <IObject UID="Claim21.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="Claim21" IsRequired="False" DefUID="ScopedBy" UID2="SPFEnumList-001" />
+  </Rel>
+  <InterfaceDef>
+    <IObject UID="ISPFDefinesNotification" Name="ISPFDefinesNotification" Description="Link interface on the SPFSpecialisedNotificationDef RelDef that links to the notification definition to be used for the Event on the related Interface" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="ISPFDefinesNotification" SpecializationValue="100" />
+    <ISchemaObj SchemaRevVer="04.03.00" DisplayName="Defines notification" />
+    <IPropCategory PropCategory="Miscellaneous" />
+  </InterfaceDef>
+  <Rel>
+    <IObject UID="IRel.ISPFRelDefMapsTo" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IRel" IsRequired="False" DefUID="Implies" UID2="ISPFRelDefMapsTo" />
+  </Rel>
+  <Rel>
+    <IObject UID="IObject.OBID" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IObject" IsRequired="True" DefUID="Exposes" UID2="OBID" OrderValue="1" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPrgCompSchema.ISchemaObj" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFPrgCompSchema" IsRequired="True" DefUID="Realizes" UID2="ISchemaObj" OrderValue="100" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFRelDefMapsTo.SPFMapDirection" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFRelDefMapsTo" IsRequired="False" DefUID="Exposes" UID2="SPFMapDirection" OrderValue="2" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFExtFactory.SPFDocCompSchema" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFExtFactory" DefUID="Instantiates" UID2="SPFDocCompSchema" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFMapFunctionDefImpliesIObject" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFMapFunctionDef" IsRequired="True" DefUID="Implies" UID2="IObject" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFEdgeDefExt.SPFEdgeCascade" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFEdgeDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFEdgeCascade" OrderValue="10" />
+  </Rel>
+  <RelDef>
+    <IObject UID="MappingToSPFMapFunction" Name="MappingToSPFMapFunction" Description="" />
+    <IRelDef2 Delete12="False" FilterEdge21="True" Delete21="False" FilterEdge12="True" />
+    <IRelDef End1Locality="AcrossComponent" Max2="1" Max1="*" Min1="0" Role1="MappingToSPFMapFunction\Mapping" Role2="MappingToSPFMapFunction\SPFMapFunction" UsesMapping="False" End2Locality="AcrossComponent" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IMapRel" UID2="ISPFMapFunctionDef" />
+  </RelDef>
+  <RelDef>
+    <IObject UID="SPFAuthoringRelDefToCDWRelDef" Name="SPFAuthoringRelDefToCDWRelDef" Description="" />
+    <IRelDef2 Delete12="False" FilterEdge21="True" Delete21="False" FilterEdge12="True" />
+    <IRelDef End1Locality="AcrossComponent" Max2="1" Max1="1" Min1="0" Role1="SPFAuthoringRelDefToCDWRelDef\FromRelDef" Role2="SPFAuthoringRelDefToCDWRelDef\ToRelDef" SpecOfUID="RelDefToRelDef" LinkInterfaces="IMapRel" UsesMapping="False" End2Locality="AcrossComponent" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IRelDef" UID2="IRelDef" />
+  </RelDef>
+  <EnumListType>
+    <IObject UID="e1ClaimMergeBehaviour" Name="ClaimMergeBehaviour" Description="Claim and Merge Behaviour" />
+    <IPropertyType />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IEnumListType />
+  </EnumListType>
+  <EnumEnum>
+    <IObject UID="e1DontClaim" Name="DontClaim" Description="Don't present the other object to be claimed" />
+    <IEnumEnum EnumNumber="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </EnumEnum>
+  <InterfaceDef>
+    <IObject UID="ISPFClassDefExt" Name="ISPFClassDefExt" Description="Class Definition Extension" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="SPFClassDefExt" SpecializationValue="100" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="Class Extension" />
+    <IPropCategory PropCategory="e1SPF_Extensions" />
+  </InterfaceDef>
+  <PropertyDef>
+    <IObject UID="HistoryNotRetained" Name="HistoryNotRetained" Description="History is not retained for this property" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="ISPFRelDefExtImpliesISchemaObj" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFRelDefExt" IsRequired="True" DefUID="Implies" UID2="ISchemaObj" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPrgCompSchema.ISPFPrgCompSchema.PI" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFPrgCompSchema" DefUID="PrimaryInterface" UID2="ISPFPrgCompSchema" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="Config" Name="Config" Description="Object Configuration" />
+    <IPropertyDef />
+    <IPropertyDefExt HistoryNotRetained="True" />
+    <ISchemaObj DisplayName="Конфигурация" SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="SPFCascade12.ScopedBy.string" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFCascade12" IsRequired="False" DefUID="ScopedBy" UID2="string128" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="OBID1" Name="OBID1" Description="OBID 1" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <RelDef>
+    <IObject UID="SPFSpecialisedNotificationDef" Name="SPFSpecialisedNotificationDef" Description="Notification event definitions for an interface" />
+    <IRelDef2 FilterEdge12="False" FilterEdge21="False" />
+    <IRelDef End1Locality="Container" Max2="*" Min1="0" Role2="Notification Event Definitions" Max1="*" LinkInterfaces="ISPFDefinesNotification" Role1="Notification Interface Definition" End2Locality="Container" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.03.00" />
+    <IRel UID1="IInterfaceDef" UID2="INotificationEventDef" />
+  </RelDef>
+  <Rel>
+    <IObject UID="IEventDefImpliesISchemaObj" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IEventDef" IsRequired="True" DefUID="Implies" UID2="ISchemaObj" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="AllowUoMValueAsText" Name="AllowUoMValueAsText" Description="Allows the value portion of a UoM to be text" />
+    <IPropertyDef />
+    <ISchemaObj DisplayName="Разрешить форматировать значение ЕдИзм как текст" SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <InterfaceDef>
+    <IObject UID="ISPFDocCompSchema" Name="ISPFDocCompSchema" Description="Document Component Schema" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="DocCompSchema" SpecializationValue="100" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="Document Component Schema" />
+    <IPropCategory PropCategory="Miscellaneous" />
+  </InterfaceDef>
+  <Rel>
+    <IObject UID="ISPFPrgCompSchema.ICompSchema" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFPrgCompSchema" IsRequired="True" DefUID="Implies" UID2="ICompSchema" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="Claim12" Name="Claim12" Description="Claim this relationship if object 1 is claimed" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="SPFDirection.e1Dir12" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFDirection" DefUID="Contains" UID2="e1Dir12" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFEventDefDisplayAs.string" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFEventDefDisplayAs" IsRequired="False" DefUID="ScopedBy" UID2="string64" />
+  </Rel>
+  <Rel>
+    <IObject UID="ContainerID.Exposes" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IObject" IsRequired="False" DefUID="Exposes" UID2="ContainerID" OrderValue="50" />
+  </Rel>
+  <Rel>
+    <IObject UID="MetaModel.SPFMapFunctionDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="MetaModel" DefUID="ModelClass" UID2="SPFMapFunctionDef" />
+  </Rel>
+  <RelDef>
+    <IObject UID="SPFRelDefMapsTo" Name="SPFRelDefMapsTo" Description="RelDef maps to PropertyDef" />
+    <IRelDef2 FilterEdge21="False" FilterEdge12="False" />
+    <IRelDef End1Locality="AcrossComponent" Max2="*" Max1="1" Min1="0" Role1="RelDef Maps From" Role2="PropertyDef Mapped To" LinkInterfaces="ISPFRelDefMapsTo" End2Locality="AcrossComponent" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IRelDef" UID2="IPropertyDef" />
+  </RelDef>
+  <Rel>
+    <IObject UID="e1ClaimMergeBehaviour.e1Ignore" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="e1ClaimMergeBehaviour" DefUID="Contains" UID2="e1Ignore" />
+  </Rel>
+  <InterfaceDef>
+    <IObject UID="IPropertyDefExt" Name="IPropertyDefExt" Description="Property Definition Extension" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="PropertyDef" SpecializationValue="100" />
+    <ISchemaObj DisplayName="Property Definition Extension" SchemaRevVer="04.00.00" />
+    <IPropCategory PropCategory="e1SPF_Extensions" />
+  </InterfaceDef>
+  <Rel>
+    <IObject UID="SPFEdgeCascade.ScopedBy.string" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFEdgeCascade" IsRequired="False" DefUID="ScopedBy" UID2="string128" />
+  </Rel>
+  <Rel>
+    <IObject UID="ViewDef.Realizes.ISPFViewDefExt" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ViewDef" IsRequired="False" DefUID="Realizes" UID2="ISPFViewDefExt" OrderValue="20" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPostHandlerUIDAndOrMethodDefUID.Exposes" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFEdgeDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFPostHandlerUIDAndOrMethodDefUID" OrderValue="20" />
+  </Rel>
+  <ClassDef>
+    <IObject UID="SPFMapFunctionDef" Name="SPFMapFunctionDef" Description="" />
+    <IMappableClass />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="MapFunction Definition" />
+    <IClassDef />
+  </ClassDef>
+  <Rel>
+    <IObject UID="SPFMapFunctionToInvokeScopedByString" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFMapFunctionToInvoke" IsRequired="True" DefUID="ScopedBy" UID2="string" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFToolCreate12.ScopedBy.e1ToolBehaviour" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFToolCreate12" IsRequired="False" DefUID="ScopedBy" UID2="e1ToolBehaviour" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="SPFToolCreate21" Name="SPFToolCreate21" Description="Defines whether an object can be created in this direction across a rel" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="Owner21.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="Owner21" IsRequired="False" DefUID="ScopedBy" UID2="boolean" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="OBID" Name="OBID" Description="OBID" />
+    <IPropertyDef />
+    <IPropertyDefExt HistoryNotRetained="True" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <RelDef>
+    <IObject UID="SPFCascadesTo" Name="SPFCascadesTo" Description="Event semantic controlling event cascading" />
+    <IRelDef2 FilterEdge21="False" FilterEdge12="False" />
+    <IRelDef End1Locality="Container" Max2="*" Role2DisplayName="Ребро-Определение" Role2="Cascades from Event" Min1="0" Role1="Cascades Edgedef" Max1="*" LinkInterfaces="ISPFCascadesEvent" End2Locality="Container" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.03.00" />
+    <IRel UID1="INotificationEventDef" UID2="IEdgeDef" />
+  </RelDef>
+  <Rel>
+    <IObject UID="Rel.Realizes.ISPFDefinesNotification" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.03.00" />
+    <IRel UID1="Rel" IsRequired="False" DefUID="Realizes" UID2="ISPFDefinesNotification" OrderValue="200" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFRelDefExt.ForceNullConfig" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFRelDefExt" IsRequired="False" DefUID="Exposes" UID2="ForceNullConfig" OrderValue="20" />
+  </Rel>
+  <Rel>
+    <IObject UID="MetaSchema.SPFPrgCompSchema" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="MetaSchema" DefUID="Componentization" UID2="SPFPrgCompSchema" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFDocCompSchema.ICompSchema" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFDocCompSchema" IsRequired="True" DefUID="Implies" UID2="ICompSchema" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="SPFPreRelDefExpansion" Name="SPFPreRelDefExpansion" Description="RelDef to expand before the Edge is expanded" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <EnumEnum>
+    <IObject UID="e1Dir12" Name="12" Description="Forwards (end 1 to end 2)" />
+    <IEnumEnum EnumNumber="0" />
+    <ISchemaObj HelpContextID="413" SchemaRevVer="04.00.00" />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="IncludeISubscribableEventDef.boolean" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IncludeISubscribableEventDef" IsRequired="False" DefUID="ScopedBy" UID2="boolean" />
+  </Rel>
+  <ClassDef>
+    <IObject UID="EventDef" Name="EventDef" Description="Event Definition" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="" />
+    <IClassDef />
+  </ClassDef>
+  <RelDef>
+    <IObject UID="Raises" Name="Raises" Description="Events raised on an interface" />
+    <IRelDef2 FilterEdge12="False" FilterEdge21="False" />
+    <IRelDef End1Locality="AcrossComponent" Max2="*" Max1="*" Min1="0" Role1="Raised by InterfaceDefs" Role2="Raised EventDefs" End2Locality="Container" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IInterfaceDef" UID2="IEventDef" />
+  </RelDef>
+  <Rel>
+    <IObject UID="HistoryNotRetained.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="HistoryNotRetained" IsRequired="False" DefUID="ScopedBy" UID2="boolean" />
+  </Rel>
+  <EnumEnum>
+    <IObject UID="e1RelateOnly" Name="RelateOnly" Description="Can only relate items across this relationship" />
+    <IEnumEnum EnumNumber="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="SPFDocCompSchema.ICompSchema" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFDocCompSchema" IsRequired="True" DefUID="Realizes" UID2="ICompSchema" OrderValue="10" />
+  </Rel>
+  <Rel>
+    <IObject UID="EventDefRealizesIEventDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="EventDef" IsRequired="True" DefUID="Realizes" UID2="IEventDef" OrderValue="10" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="ForceNullConfig" Name="ForceNullConfig" Description="Force the rel to exist outside of config control" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <InterfaceDef>
+    <IObject UID="ISPFInterfaceDefViewDef" Name="ISPFInterfaceDefViewDef" Description="Link interface on the RelDef that controls which ViewDef is used in the properties grid" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="ISPFInterfaceDefViewDef" SpecializationValue="100" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="InterfaceDef to ViewDef" />
+    <IPropCategory PropCategory="Miscellaneous" />
+  </InterfaceDef>
+  <Rel>
+    <IObject UID="{6347BF8D-DDD7-4A2A-B87D-1BDF0D057906}" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFDependantConfiguration" IsRequired="False" DefUID="ScopedBy" UID2="string64" />
+  </Rel>
+  <Rel>
+    <IObject UID="IInterfaceDefExt.Exposes.SPFMergeInterface" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IInterfaceDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFMergeInterface" OrderValue="20" />
+  </Rel>
+  <RelDef>
+    <IObject UID="ClassDefToClassDef" Name="ClassDefToClassDef" Description="" />
+    <IRelDef2 Delete12="False" FilterEdge21="True" Delete21="False" FilterEdge12="True" />
+    <IRelDef End1Locality="AcrossComponent" Max2="*" Max1="*" Min1="0" Role1="ClassDefToClassDef\FromClassDef" Role2="ClassDefToClassDef\ToClassDef" SpecOfUID="ClassToClass" LinkInterfaces="IMapRel" UsesMapping="False" End2Locality="AcrossComponent" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IClassDef" UID2="IClassDef" />
+  </RelDef>
+  <Rel>
+    <IObject UID="SPFDocCompSchema.IObject" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFDocCompSchema" IsRequired="True" DefUID="Realizes" UID2="IObject" OrderValue="1" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFSubscribedObjectCondition.string" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFSubscribedObjectCondition" IsRequired="False" DefUID="ScopedBy" UID2="string" />
+  </Rel>
+  <Rel>
+    <IObject UID="IRel.OBID1" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IRel" IsRequired="False" DefUID="Exposes" UID2="OBID1" OrderValue="12" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="IncludeINotificationEventDef" Name="IncludeINotificationEventDef" Description="Determines whether INotificationEventDef is to be included on object" />
+    <IPropertyDef />
+    <ISchemaObj DisplayName="Поддерживает Уведомление?" SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="SPFPreHandlerUIDAndOrMethodDefUID.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFPreHandlerUIDAndOrMethodDefUID" IsRequired="False" DefUID="ScopedBy" UID2="string128" />
+  </Rel>
+  <Rel>
+    <IObject UID="e1ToolBehaviour.Contains.e1Disabled" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="e1ToolBehaviour" DefUID="Contains" UID2="e1Disabled" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFClassDefExt.Exposes.SPFFTREnabled" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFClassDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFFTREnabled" OrderValue="10" />
+  </Rel>
+  <Rel>
+    <IObject UID="OBID.string" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="OBID" IsRequired="False" DefUID="ScopedBy" UID2="string64" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="SPFReportDefObjStructure" Name="SPFReportDefObjStructure" Description="Report Definition Example Object Structure." />
+    <IPropertyDef />
+    <ISchemaObj DisplayName="Report Definition Example Object Structure." SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <PropertyDef>
+    <IObject UID="Includes12" Name="Includes12" Description="Include this RelDef when object 1 is referenced" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="IRelDef.ISPFRelDefExt" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IRelDef" IsRequired="False" DefUID="Implies" UID2="ISPFRelDefExt" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFDocCompSchema.IEnumMetadata" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFDocCompSchema" IsRequired="True" DefUID="Realizes" UID2="IEnumMetadata" OrderValue="20" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFFTRIndicator.ScopedBy.boolean" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFFTRIndicator" IsRequired="False" DefUID="ScopedBy" UID2="boolean" />
+  </Rel>
+  <Rel>
+    <IObject UID="EventDefPrimaryInterfaceIEventDeff" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="EventDef" DefUID="PrimaryInterface" UID2="IEventDef" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="SPFUIDDef" Name="SPFUIDDef" Description="Unique ID definition" />
+    <IPropertyDef />
+    <ISchemaObj DisplayName="Определение Уникального Идентификатора" SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="SubscriptionDefRealizesISchemaObj" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SubscriptionDef" IsRequired="True" DefUID="Realizes" UID2="ISchemaObj" OrderValue="100" />
+  </Rel>
+  <Rel>
+    <IObject UID="IViewDef.Implies.ISPFViewDefExt" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IViewDef" IsRequired="False" DefUID="Implies" UID2="ISPFViewDefExt" />
+  </Rel>
+  <Rel>
+    <IObject UID="IRel.DomainUID1" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IRel" IsRequired="True" DefUID="Exposes" UID2="DomainUID1" OrderValue="11" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="SPFMapDirection" Name="SPFMapDirection" Description="Mapping direction" />
+    <IPropertyDef DefaultValue="e112" />
+    <ISchemaObj DisplayName="Направление Сопоставления" SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="ISPFMapFunctionDefExposesSPFMapFunctionToInvoke" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFMapFunctionDef" IsRequired="True" DefUID="Exposes" UID2="SPFMapFunctionToInvoke" OrderValue="10" />
+  </Rel>
+  <Rel>
+    <IObject UID="IObject.ClaimedToConfigs" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="05.01.00" />
+    <IRel UID1="IObject" IsRequired="False" DefUID="Exposes" UID2="ClaimedToConfigs" OrderValue="1" />
+  </Rel>
+  <Rel>
+    <IObject UID="e1ClaimMergeBehaviour.e1Interface" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="e1ClaimMergeBehaviour" DefUID="Contains" UID2="e1Interface" />
+  </Rel>
+  <EnumEnum>
+    <IObject UID="e1ReqdObj" Name="ReqdObj" Description="Claim the object on the other side" />
+    <IEnumEnum EnumNumber="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="ISPFRelDefExt.Includes12" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFRelDefExt" IsRequired="False" DefUID="Exposes" UID2="Includes12" OrderValue="30" />
+  </Rel>
+  <Rel>
+    <IObject UID="PropertyDef.IPropertyDefExt" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="PropertyDef" IsRequired="False" DefUID="Realizes" UID2="IPropertyDefExt" OrderValue="20" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="MethodHandlerObjectUID" Name="MethodHandlerObjectUID" Description="Method Handler's Object UID" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <InterfaceDef>
+    <IObject UID="IIncludes" Name="IIncludes" Description="Includes" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="Includes" SpecializationValue="100" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="Includes" />
+    <IPropCategory PropCategory="Miscellaneous" />
+  </InterfaceDef>
+  <Rel>
+    <IObject UID="SPFMapFunctionDef.Primary.ISPFMapFunctionDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFMapFunctionDef" DefUID="PrimaryInterface" UID2="ISPFMapFunctionDef" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="DomainUID" Name="DomainUID" Description="Domain UID" />
+    <IPropertyDef />
+    <IPropertyDefExt HistoryNotRetained="True" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="Домен" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="Config.string" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="Config" IsRequired="False" DefUID="ScopedBy" UID2="string64" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="UniqueKey" Name="UniqueKey" Description="Unique key" />
+    <IPropertyDef />
+    <IPropertyDefExt HistoryNotRetained="True" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="Уникальный Ключ" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="OBID1.string" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="OBID1" IsRequired="False" DefUID="ScopedBy" UID2="string64" />
+  </Rel>
+  <Rel>
+    <IObject UID="IIncludesImpliesIObject" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IIncludes" IsRequired="True" DefUID="Implies" UID2="IObject" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFRelDefExt.SPFCascade12" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFRelDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFCascade12" OrderValue="50" />
+  </Rel>
+  <Rel>
+    <IObject UID="EventDef.ISubscribableEventDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="EventDef" IsRequired="False" DefUID="Realizes" UID2="ISubscribableEventDef" OrderValue="21" />
+  </Rel>
+  <Rel>
+    <IObject UID="IRel.ISPFInterfaceDefViewDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IRel" IsRequired="False" DefUID="Implies" UID2="ISPFInterfaceDefViewDef" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="Includes21" Name="Includes21" Description="Include this RelDef when object 2 is referenced" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <EnumEnum>
+    <IObject UID="e1HangersSupportsHVACManufacturingFabricationConstruction" Name="Hangers &amp; Supports;HVAC;Manufacturing Fabrication Construction" Description="" />
+    <IEnumEnum EnumNumber="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="IIncludes.EdgeRole" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IIncludes" IsRequired="False" DefUID="Exposes" UID2="EdgeRole" OrderValue="30" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFExtFactory.SubscriptionDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFExtFactory" DefUID="Instantiates" UID2="SubscriptionDef" />
+  </Rel>
+  <RelDef>
+    <IObject UID="SPFPropertyMapsTo" Name="SPFPropertyMapsTo" Description="PropertyDef maps to PropertyDef" />
+    <IRelDef2 FilterEdge21="False" FilterEdge12="False" />
+    <IRelDef End1Locality="AcrossComponent" Max2="*" Max1="1" Min1="0" Role1="Property Mapped From" Role2="Property Maps To" End2Locality="AcrossComponent" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IPropertyDef" UID2="IPropertyDef" />
+  </RelDef>
+  <EnumEnum>
+    <IObject UID="e1Interface" Name="Interface" Description="Claim/merge the interface only" />
+    <IEnumEnum EnumNumber="2" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="SPFEnumList-001-3" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFEnumList-001" DefUID="Contains" UID2="e1OptionalObj" />
+  </Rel>
+  <Rel>
+    <IObject UID="InterfaceDef.IInterfaceDefExt" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="InterfaceDef" IsRequired="False" DefUID="Realizes" UID2="IInterfaceDefExt" OrderValue="20" />
+  </Rel>
+  <Rel>
+    <IObject UID="IClassDef.ISPFClassDefExt" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IClassDef" IsRequired="False" DefUID="Implies" UID2="ISPFClassDefExt" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="ClaimedToConfigs" Name="ClaimedToConfigs" Description="Claimed To Configs" />
+    <IPropertyDef />
+    <IPropertyDefExt HistoryNotRetained="True" />
+    <ISchemaObj DisplayName="Claimed To Configs" SchemaRevVer="05.01.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="SPFPrgCompSchema.ICompSchema" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFPrgCompSchema" IsRequired="True" DefUID="Realizes" UID2="ICompSchema" OrderValue="10" />
+  </Rel>
+  <Rel>
+    <IObject UID="MetaModel.EventDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="MetaModel" DefUID="ModelClass" UID2="EventDef" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISubscribableEventDef.Implies.ISchemaObj" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISubscribableEventDef" IsRequired="False" DefUID="Implies" UID2="ISchemaObj" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="CreationUser" Name="CreationUser" Description="Creation User" />
+    <IPropertyDef />
+    <IPropertyDefExt HistoryNotRetained="True" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="Создал" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="SPFToolCreate21.ScopedBy.e1ToolBehaviour" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFToolCreate21" IsRequired="False" DefUID="ScopedBy" UID2="e1ToolBehaviour" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFRelDefExt.SPFCascade21" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFRelDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFCascade21" OrderValue="51" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="TerminationUser" Name="TerminationUser" Description="Termination User" />
+    <IPropertyDef />
+    <IPropertyDefExt HistoryNotRetained="True" />
+    <ISchemaObj DisplayName="Удалил" SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="MetaModel.SPFDocCompSchema" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="MetaModel" DefUID="ModelClass" UID2="SPFDocCompSchema" />
+  </Rel>
+  <Rel>
+    <IObject UID="IInterfaceDefExt.Implies.ISchemaObj" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IInterfaceDefExt" IsRequired="True" DefUID="Implies" UID2="ISchemaObj" />
+  </Rel>
+  <Rel>
+    <IObject UID="IPropertyDefExt.Exposes.HistoryNotRetained" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IPropertyDefExt" IsRequired="False" DefUID="Exposes" UID2="HistoryNotRetained" OrderValue="10" />
+  </Rel>
+  <InterfaceDef>
+    <IObject UID="ISPFTEFPublishedItem" Name="ISPFTEFPublishedItem" Description="TEF Object or Relationship" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="TEFPublishedItem" SpecializationValue="100" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="TEF Object or Relationship" />
+    <IPropCategory PropCategory="Miscellaneous" />
+  </InterfaceDef>
+  <Rel>
+    <IObject UID="IRel.IIncludes" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IRel" IsRequired="False" DefUID="Implies" UID2="IIncludes" />
+  </Rel>
+  <Rel>
+    <IObject UID="IObjectExposesDomainUID" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IObject" IsRequired="True" DefUID="Exposes" UID2="DomainUID" OrderValue="70" />
+  </Rel>
+  <EnumEnum>
+    <IObject UID="e1Deleted" Name="Deleted" Description="Deleted" />
+    <IEnumEnum EnumNumber="3" />
+    <ISchemaObj HelpContextID="413" SchemaRevVer="04.00.00" />
+  </EnumEnum>
+  <PropertyDef>
+    <IObject UID="SPFSubscribedObjectCondition" Name="SPFSubscribedObjectCondition" Description="Subscribed Object Condition" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="SPFExtFactory.EventDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFExtFactory" DefUID="Instantiates" UID2="EventDef" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFMapFunctionDef.ISPFMapFunctionDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFMapFunctionDef" IsRequired="True" DefUID="Realizes" UID2="ISPFMapFunctionDef" OrderValue="10" />
+  </Rel>
+  <Rel>
+    <IObject UID="ClaimedToConfigs.string" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="05.01.00" />
+    <IRel UID1="ClaimedToConfigs" IsRequired="False" DefUID="ScopedBy" UID2="string64" />
+  </Rel>
+  <EnumEnum>
+    <IObject UID="e1Ignore" Name="Ignore" Description="Leave this interface" />
+    <IEnumEnum EnumNumber="3" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </EnumEnum>
+  <InterfaceDef>
+    <IObject UID="IInterfaceDefExt" Name="IInterfaceDefExt" Description="Interface Definition Extension" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole InterfaceIcon="InterfaceDefExt" SpecializationValue="100" />
+    <ISchemaObj DisplayName="Interface Definition Extension" SchemaRevVer="04.00.00" />
+    <IPropCategory PropCategory="e1SPF_Extensions" />
+  </InterfaceDef>
+  <Rel>
+    <IObject UID="{9CABFC28-46BD-4E11-A3FD-DD38458F0937}" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFIsConfigurationControlled" IsRequired="False" DefUID="ScopedBy" UID2="boolean" />
+  </Rel>
+  <Rel>
+    <IObject UID="EventDefRealizesIObject" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="EventDef" IsRequired="True" DefUID="Realizes" UID2="IObject" OrderValue="1" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPostRelDefExpansion.Exposes" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFEdgeDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFPostRelDefExpansion" OrderValue="30" />
+  </Rel>
+  <Rel>
+    <IObject UID="SchemaCompInstancesSPFMapFunctionDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SchemaCompFactory" DefUID="Instantiates" UID2="SPFMapFunctionDef" />
+  </Rel>
+  <Rel>
+    <IObject UID="IInterfaceDefExt.Exposes.SPFClaimInterface" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IInterfaceDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFClaimInterface" OrderValue="10" />
+  </Rel>
+  <Rel>
+    <IObject UID="PropCategories.e1HVAC" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="PropCategories" DefUID="Contains" UID2="e1HVAC" />
+  </Rel>
+  <RelDef>
+    <IObject UID="SPFIncludesClass" Name="SPFIncludesClass" Description="ClassDef includes ClassDef" />
+    <IRelDef2 FilterEdge21="False" FilterEdge12="False" />
+    <IRelDef End1Locality="AcrossComponent" Max2="1" Min1="0" Role2="Child Class Definition" Max1="1" Role1="Parent Class Definition" End2Locality="AcrossComponent" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IClassDef" UID2="IClassDef" />
+  </RelDef>
+  <Rel>
+    <IObject UID="IPropertyDefExtExposesSPFFTRIndicator" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IPropertyDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFFTRIndicator" OrderValue="10" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="SPFToolCreate12" Name="SPFToolCreate12" Description="Defines whether an object can be created in this direction across a rel" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="Owner12.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="Owner12" IsRequired="False" DefUID="ScopedBy" UID2="boolean" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="LastUpdatedDate" Name="LastUpdatedDate" Description="Objects last updated date" />
+    <IPropertyDef />
+    <IPropertyDefExt HistoryNotRetained="True" />
+    <ISchemaObj SchemaRevVer="04.00.00" DisplayName="Дата последнего обновления" />
+  </PropertyDef>
+  <RelDef>
+    <IObject UID="SubscriptionDefISemanticDef" Name="SubscriptionDefISemanticDef" Description="Subscription definition semantics" />
+    <IRelDef2 FilterEdge21="False" FilterEdge12="False" />
+    <IRelDef End1Locality="AcrossComponent" Max2="*" Max1="*" Min1="0" Role1="Subscription Defs" Role2="Semantics" End2Locality="AcrossComponent" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISubscriptionDef" UID2="ISemanticDef" />
+  </RelDef>
+  <Rel>
+    <IObject UID="Rel.ISPFInterfaceDefViewDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="Rel" IsRequired="False" DefUID="Realizes" UID2="ISPFInterfaceDefViewDef" OrderValue="208" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="SPFClaimInterface" Name="SPFClaimInterface" Description="Defines behaviour when claiming an interface" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="MetaSchema.SPFDocCompSchema" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="MetaSchema" DefUID="Componentization" UID2="SPFDocCompSchema" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFTEFPublishedItem.IObject" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFTEFPublishedItem" IsRequired="True" DefUID="Implies" UID2="IObject" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFRelDefExt.SPFToolCreate21" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFRelDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFToolCreate21" OrderValue="61" />
+  </Rel>
+  <EnumListType>
+    <IObject UID="SPFDirection" Name="Direction" Description="Direction" />
+    <IPropertyType />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IEnumListType />
+  </EnumListType>
+  <Rel>
+    <IObject UID="IncludeINotificationEventDef.boolean" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IncludeINotificationEventDef" IsRequired="False" DefUID="ScopedBy" UID2="boolean" />
+  </Rel>
+  <ModelDef>
+    <IObject UID="AdminModel" Name="AdminModel" Description="" />
+    <ISchemaObj />
+    <IModelDef />
+  </ModelDef>
+  <RelDef>
+    <IObject UID="IncludeGraphForInterface" Name="IncludeGraphForInterface" Description="Graph definition for the includes structure from an interface" />
+    <IRelDef2 FilterEdge21="False" FilterEdge12="False" />
+    <IRelDef End1Locality="AcrossComponent" Role1="Graph for Includes" Max2="*" Min1="0" Role2="InterfaceDef for Includes" Max1="*" End2Locality="Container" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IDirectedGraphDef" UID2="IInterfaceDef" />
+  </RelDef>
+  <Rel>
+    <IObject UID="ISubscriptionDef.SPFSubscribedObjectInterfaceDefUID" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISubscriptionDef" IsRequired="False" DefUID="Exposes" UID2="SPFSubscribedObjectInterfaceDefUID" OrderValue="30" />
+  </Rel>
+  <Rel>
+    <IObject UID="e1ClaimMergeBehaviour.e1InterfaceRelsAndProps" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="e1ClaimMergeBehaviour" DefUID="Contains" UID2="e1InterfaceRelsAndProps" />
+  </Rel>
+  <Rel>
+    <IObject UID="PropCategories.e1SPF_Extensions" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="PropCategories" DefUID="Contains" UID2="e1SPF_Extensions" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPreRelDefExpansion.Exposes" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFEdgeDefExt" IsRequired="False" DefUID="Exposes" UID2="SPFPreRelDefExpansion" OrderValue="50" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="SPFCascade21" Name="SPFCascade21" Description="Defines the cascade name for the relationship21, supports #nnnn where nnnn is value in client resource file." />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="Includes21.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="Includes21" IsRequired="False" DefUID="ScopedBy" UID2="boolean" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="DomainUID2" Name="DomainUID2" Description="Domain UID 2" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <RelDef>
+    <IObject UID="EventDefISemanticDef" Name="EventDefISemanticDef" Description="Event definition semantics" />
+    <IRelDef2 FilterEdge21="False" FilterEdge12="False" />
+    <IRelDef End1Locality="AcrossComponent" Max2="*" Min1="0" Role2="Semantics" Max1="*" Role1="Event Defs" End2Locality="AcrossComponent" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="IEventDef" UID2="ISemanticDef" />
+  </RelDef>
+  <Rel>
+    <IObject UID="Rel.ISPFTEFPublishedItem" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="Rel" IsRequired="False" DefUID="Realizes" UID2="ISPFTEFPublishedItem" OrderValue="208" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFUIDDef.ScopedBy" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFUIDDef" IsRequired="False" DefUID="ScopedBy" UID2="string64" />
+  </Rel>
+  <Rel>
+    <IObject UID="MetaSchema.SubscriptionDef" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="MetaSchema" DefUID="Componentization" UID2="SubscriptionDef" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFRelDefMapsTo.IObject" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFRelDefMapsTo" IsRequired="True" DefUID="Implies" UID2="IObject" />
+  </Rel>
+  <PropertyDef>
+    <IObject UID="SPFPostRelDefExpansion" Name="SPFPostRelDefExpansion" Description="RelDef to expand after the Edge has been expanded" />
+    <IPropertyDef />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+  </PropertyDef>
+  <Rel>
+    <IObject UID="ISubscribableEventDef.SPFEventDefDisplayAs" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISubscribableEventDef" IsRequired="False" DefUID="Exposes" UID2="SPFEventDefDisplayAs" OrderValue="2" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFMapDirection.ScopedBy.SPFDirection" Name="" Description="" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="SPFMapDirection" IsRequired="True" DefUID="ScopedBy" UID2="SPFDirection" />
+  </Rel>
+  <ModelDef>
+    <IObject UID="WorkflowModel" Name="WorkflowModel" Description="" />
+    <ISchemaObj />
+    <IModelDef />
+  </ModelDef>
+  <RelDef>
+    <IObject UID="Handles" Name="Handles" Description="Method handler subscription" />
+    <IRelDef2 FilterEdge21="False" Delete12="True" FilterEdge12="False" />
+    <IRelDef End1Locality="AcrossComponent" Max2="*" Max1="1" Min1="1" Role1="Method Handler" Role2="Subscription" End2Locality="Container" Min2="0" />
+    <ISchemaObj SchemaRevVer="04.00.00" />
+    <IRel UID1="ISPFMethodDef" UID2="ISubscriptionDef" />
+  </RelDef>
+</Container>

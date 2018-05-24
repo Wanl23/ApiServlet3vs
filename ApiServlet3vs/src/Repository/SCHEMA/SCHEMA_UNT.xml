@@ -1,0 +1,40 @@
+<Container CompSchema="" Scope="" SoftwareVersion="04.02.00.14" IObject_ContainerID="UNT" IObject_OBID="Auto" IObject_CreationDate="Now" IObject_TerminationDate="9999/12/31-23:59:59:999" IObject_LastUpdatedDate="Now" IObject_CreationUser="superuser" IObject_DomainUID="Auto" IObject_UniqueKey="Auto" IRel_DomainUID1="Auto" IRel_DomainUID2="Auto" >
+  <Rel>
+    <IObject UID="509b9a54-e048-446b-9c1e-615f6a944f4f" Name="" Description="" />
+    <IRel UID1="SPFPlant" DefUID="SPFClassDefDefaultGraphDef" UID2="DGD_PlantExpansion" />
+  </Rel>
+  <Rel>
+    <IObject UID="9a5c7239-96c9-4b25-b45f-88525a5bd3b0" Name="" Description="" />
+    <IRel UID1="SPFFunctionalArea" DefUID="SPFClassDefDefaultGraphDef" UID2="DGD_AreaExpansion" />
+  </Rel>
+  <Rel>
+    <IObject UID="DGD_PlantExpansion.ISPFPlant" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="DGD_PlantExpansion" IsRequired="False" DefUID="GraphDefInterfaceDef" UID2="ISPFPlant" OrderValue="0" />
+  </Rel>
+  <Rel>
+    <IObject UID="DGD_AreaExpansion.ISPFFunctionalArea" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="DGD_AreaExpansion" IsRequired="False" DefUID="GraphDefInterfaceDef" UID2="ISPFFunctionalArea" OrderValue="0" />
+  </Rel>
+  <DirectedGraphDef>
+    <IObject UID="DGD_PlantExpansion" Name="PlantExpansion" Description="" />
+    <IDirectedGraphDef GraphDefn="+ISPFPlant/+ISPFPlant/,SPFPlantAreas_21/SPFFunctionalArea/+ISPFPlant" />
+    <ISchemaObj DisplayName="PlantExpansion" />
+  </DirectedGraphDef>
+  <DirectedGraphDef>
+    <IObject UID="DGD_AreaExpansion" Name="AreaExpansion" Description="" />
+    <IDirectedGraphDef GraphDefn="+ISPFFunctionalArea/+ISPFFunctionalArea/,SPFFunctionalAreaUnits_21/SPFFunctionalUnit/+ISPFFunctionalArea" />
+    <ISchemaObj DisplayName="AreaExpansion" />
+  </DirectedGraphDef>
+  <DirectedGraphDef>
+    <IObject UID="DGD_AreaUnitExpansion" Name="AreaUnitExpansion" Description="Раскрытие Блок/PBS/Система" />
+    <IDirectedGraphDef GraphDefn="+ISPFFunctionalArea/+ISPFFunctionalArea/,SPFFunctionalAreaUnits_21/SPFFunctionalUnit/+ISPFFunctionalArea,SPFFunctionalUnitSystem_21/SPXSystem/SPFFunctionalUnit" />
+    <ISchemaObj DisplayName="AreaUnitExpansion" />
+  </DirectedGraphDef>
+  <Rel>
+    <IObject UID="DGD_AreaUnitExpansion.ISPFFunctionalArea" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="DGD_AreaUnitExpansion" IsRequired="False" DefUID="GraphDefInterfaceDef" UID2="ISPFFunctionalArea" OrderValue="0" />
+  </Rel>
+</Container>

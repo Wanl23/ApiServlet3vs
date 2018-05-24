@@ -1,0 +1,211 @@
+<Container CompSchema="" Scope="" SoftwareVersion="04.02.00.14" IObject_ContainerID="Common.WBS_Schema" IObject_OBID="Auto" IObject_CreationDate="Now" IObject_TerminationDate="9999/12/31-23:59:59:999" IObject_LastUpdatedDate="Now" IObject_CreationUser="superuser" IObject_DomainUID="Auto" IObject_UniqueKey="Auto" IRel_DomainUID1="Auto" IRel_DomainUID2="Auto" >
+  <Rel>
+    <IObject UID="SPFPlant.ISPFPrgWorkpackH1" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFPlant" IsRequired="False" DefUID="Realizes" UID2="ISPFPrgWorkpackH1" OrderValue="-1" />
+  </Rel>
+  <Rel>
+    <IObject UID="Componentization.SPFProject" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFReferenceComponent" IsRequired="False" DefUID="Componentization" UID2="SPFProject" OrderValue="0" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPlant.ISPFPlant.PI" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFPlant" IsRequired="False" DefUID="PrimaryInterface" UID2="ISPFPlant" OrderValue="0" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFProject.ISPFPrgWorkpackH1" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFProject" IsRequired="False" DefUID="Realizes" UID2="ISPFPrgWorkpackH1" OrderValue="-1" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPlant.ISPFPrgWorkpackTemplateH1" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFPlant" IsRequired="False" DefUID="Realizes" UID2="ISPFPrgWorkpackTemplateH1" OrderValue="-1" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPlantProjects.ISPFPlant" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="EDG_SPFPlantProjects" IsRequired="False" DefUID="UserEdgeDefInterfaceDef" UID2="ISPFPlant" OrderValue="0" />
+  </Rel>
+  <Rel>
+    <IObject UID="Instantiates.SPFProject" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SchemaCompFactory" IsRequired="False" DefUID="Instantiates" UID2="SPFProject" OrderValue="0" />
+  </Rel>
+  <InterfaceDef>
+    <IObject UID="ISPFPlant" Name="ISPFPlant" Description="Plant" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole />
+    <ISchemaObj DisplayName="Объект проектирования" />
+    <IPropCategory />
+  </InterfaceDef>
+  <Rel>
+    <IObject UID="SPFProject.IObject" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFProject" IsRequired="True" DefUID="Realizes" UID2="IObject" OrderValue="10" />
+  </Rel>
+  <Rel>
+    <IObject UID="ModelClass.SPFProject" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="PlannedMaterialModel" IsRequired="False" DefUID="ModelClass" UID2="SPFProject" OrderValue="0" />
+  </Rel>
+  <Rel>
+    <IObject UID="{B7125DED-D032-4915-A888-772DD0FAE496}" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="ISPFPlant" DefUID="Implies" UID2="ISPFAuthPublishedItem" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFProject.ISPFConfigurationItem" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFProject" IsRequired="True" DefUID="Realizes" UID2="ISPFConfigurationItem" OrderValue="20" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFPlant.IPBSItemCollection" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="ISPFPlant" IsRequired="True" DefUID="Implies" UID2="IPBSItemCollection" />
+  </Rel>
+  <Rel>
+    <IObject UID="Instantiates.SPFPlant" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SchemaCompFactory" IsRequired="False" DefUID="Instantiates" UID2="SPFPlant" OrderValue="0" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPlant.IPBSItemCollection" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFPlant" IsRequired="True" DefUID="Realizes" UID2="IPBSItemCollection" OrderValue="212" />
+  </Rel>
+  <Rel>
+    <IObject UID="ModelClass.SPFPlant" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="PlannedMaterialModel" IsRequired="False" DefUID="ModelClass" UID2="SPFPlant" OrderValue="0" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPlant.ISPFAuthPublishedItem" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFPlant" IsRequired="False" DefUID="Realizes" UID2="ISPFAuthPublishedItem" OrderValue="110" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPlant.EDG_SPFActiveConfigItems" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFPlant" DefUID="SPFClassDefDefaultEdgeDef" UID2="EDG_SPFActiveConfigItems" />
+  </Rel>
+  <ClassDef>
+    <IObject UID="SPFProject" Name="SPFProject" Description="" />
+    <ISPFClassDefExt SPFIsConfigurationControlled="True" SPFUniqueKeyDef="PR,Name" SPFUIDDef="PR,Name" SPFDependantConfiguration="SPFPlant" />
+    <ISchemaObj />
+    <IClassDef />
+  </ClassDef>
+  <Rel>
+    <IObject UID="{CAE8316D-2C57-45FF-BCBE-F19F2D8D6807}" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="ISPFPlant" DefUID="Implies" UID2="ISPFSubscribableItem" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPlant.ISPFPlant" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFPlant" IsRequired="True" DefUID="Realizes" UID2="ISPFPlant" OrderValue="20" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFProject.ISPFProject" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFProject" IsRequired="True" DefUID="Realizes" UID2="ISPFProject" OrderValue="20" />
+  </Rel>
+  <EdgeDef>
+    <IObject UID="EDG_SPFProjectPlant" Name="SPFProjectPlant" Description="" />
+    <IPositionCriteria />
+    <IEdgeDef PathDefn="-SPFConfigurationTree" StartInterfaceName="ISPFConfigurationItem" />
+    <ISimpleCriteria />
+    <IEdgeDef2 FilterEdge="False" />
+    <ISchemaObj DisplayName="Объект проектирования" />
+  </EdgeDef>
+  <Rel>
+    <IObject UID="SPFPlant.ISPFSubscribableItem" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFPlant" IsRequired="True" DefUID="Realizes" UID2="ISPFSubscribableItem" OrderValue="5" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFProject.EDG_SPFActiveConfigItems" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFProject" DefUID="SPFClassDefDefaultEdgeDef" UID2="EDG_SPFActiveConfigItems" />
+  </Rel>
+  <Rel>
+    <IObject UID="Componentization.SPFPlant" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFReferenceComponent" IsRequired="False" DefUID="Componentization" UID2="SPFPlant" OrderValue="0" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFProject.ISPFPrgWorkpackTemplateH1" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFProject" IsRequired="False" DefUID="Realizes" UID2="ISPFPrgWorkpackTemplateH1" OrderValue="-1" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFProjectPlant.ISPFProject" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="EDG_SPFProjectPlant" IsRequired="False" DefUID="UserEdgeDefInterfaceDef" UID2="ISPFProject" OrderValue="0" />
+  </Rel>
+  <InterfaceDef>
+    <IObject UID="ISPFProject" Name="ISPFProject" Description="Project" />
+    <IEnumMetadata />
+    <IInterfaceDef />
+    <IInterfaceRole />
+    <ISchemaObj DisplayName="Project" />
+    <IPropCategory />
+  </InterfaceDef>
+  <Rel>
+    <IObject UID="{A380D15B-0EE9-4A7D-A913-BB8F095DDCCA}" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="ISPFPlant" DefUID="Implies" UID2="ISPFAuthPublishableItem" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFPlant.ISPFConfigurationItem" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="ISPFPlant" IsRequired="False" DefUID="Implies" UID2="ISPFConfigurationItem" OrderValue="20" />
+  </Rel>
+  <Rel>
+    <IObject UID="ISPFProject.ISPFConfigurationItem" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="ISPFProject" IsRequired="False" DefUID="Implies" UID2="ISPFConfigurationItem" OrderValue="0" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFProject.ISPFProject.PI" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFProject" IsRequired="False" DefUID="PrimaryInterface" UID2="ISPFProject" OrderValue="0" />
+  </Rel>
+  <ClassDef>
+    <IObject UID="SPFPlant" Name="SPFPlant" Description="" />
+    <ISPFClassDefExt SPFIsConfigurationControlled="False" SPFUIDDef="PL,Name" SPFUniqueKeyDef="PL,Name" />
+    <ISchemaObj />
+    <IClassDef />
+  </ClassDef>
+  <Rel>
+    <IObject UID="SPFPlant.IObject" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFPlant" IsRequired="True" DefUID="Realizes" UID2="IObject" OrderValue="10" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFProject.ISPFSubscribableItem" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFProject" IsRequired="True" DefUID="Realizes" UID2="ISPFSubscribableItem" OrderValue="5" />
+  </Rel>
+  <EdgeDef>
+    <IObject UID="EDG_SPFPlantProjects" Name="SPFPlantProjects" Description="" />
+    <IPositionCriteria />
+    <IEdgeDef StartInterfaceName="ISPFConfigurationItem" PathDefn="+SPFConfigurationTree" />
+    <ISimpleCriteria />
+    <IEdgeDef2 FilterEdge="False" />
+    <ISchemaObj DisplayName="Проекты" />
+  </EdgeDef>
+  <Rel>
+    <IObject UID="{46AC27F9-1E85-4B4E-B09E-7213E60F75C2}" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="ISPFProject" DefUID="Implies" UID2="ISPFSubscribableItem" />
+  </Rel>
+  <Rel>
+    <IObject UID="SPFPlant.ISPFConfigurationItem" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="SPFPlant" IsRequired="True" DefUID="Realizes" UID2="ISPFConfigurationItem" OrderValue="0" />
+  </Rel>
+</Container>

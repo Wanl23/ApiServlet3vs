@@ -1,0 +1,162 @@
+<Container CompSchema="" Scope="" SoftwareVersion="04.02.00.14" IObject_ContainerID="Common.Transmittals_Schema_DocCategories" IObject_OBID="Auto" IObject_CreationDate="Now" IObject_TerminationDate="9999/12/31-23:59:59:999" IObject_LastUpdatedDate="Now" IObject_CreationUser="superuser" IObject_DomainUID="Auto" IObject_UniqueKey="Auto" IRel_DomainUID1="Auto" IRel_DomainUID2="Auto" >
+  <Rel>
+    <IObject UID="XmtlDocCategories.General_Documents" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="e1XmtlDocCategories" IsRequired="False" DefUID="Contains" UID2="e1General_Documents" OrderValue="0" />
+  </Rel>
+  <EnumEnum>
+    <IObject UID="e1Piping_Documents" Name="Piping Documents" Description="" />
+    <IEnumEnum EnumNumber="10" />
+    <ISchemaObj />
+  </EnumEnum>
+  <EnumEnum>
+    <IObject UID="e13D_Documents" Name="3D Documents" Description="" />
+    <IEnumEnum EnumNumber="1" />
+    <ISchemaObj />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="XmtlDocCategories.Process_Documents" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="e1XmtlDocCategories" IsRequired="False" DefUID="Contains" UID2="e1Process_Documents" OrderValue="0" />
+  </Rel>
+  <EnumEnum>
+    <IObject UID="e1PBS_Documents" Name="PBS Documents" Description="" />
+    <IEnumEnum EnumNumber="8" />
+    <ISchemaObj />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="XmtlDocCategories.Piping_Documents" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="e1XmtlDocCategories" IsRequired="False" DefUID="Contains" UID2="e1Piping_Documents" OrderValue="0" />
+  </Rel>
+  <Rel>
+    <IObject UID="XmtlDocCategories.3D_Documents" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="e1XmtlDocCategories" IsRequired="False" DefUID="Contains" UID2="e13D_Documents" OrderValue="0" />
+  </Rel>
+  <EnumEnum>
+    <IObject UID="e1Process_Secure_Documents" Name="Process Secure Documents" Description="" />
+    <IEnumEnum EnumNumber="13" />
+    <ISchemaObj />
+  </EnumEnum>
+  <EnumEnum>
+    <IObject UID="e1Equipment_Documents" Name="Equipment Documents" Description="" />
+    <IEnumEnum EnumNumber="4" />
+    <ISchemaObj />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="XmtlDocCategories.Purchasing_Documents" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="e1XmtlDocCategories" IsRequired="False" DefUID="Contains" UID2="e1Purchasing_Documents" OrderValue="0" />
+  </Rel>
+  <Rel>
+    <IObject UID="XmtlDocCategories.Instrument_Documents" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="e1XmtlDocCategories" IsRequired="False" DefUID="Contains" UID2="e1Instrument_Documents" OrderValue="0" />
+  </Rel>
+  <Rel>
+    <IObject UID="XmtlDocCategories.Equipment_Documents" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="e1XmtlDocCategories" IsRequired="False" DefUID="Contains" UID2="e1Equipment_Documents" OrderValue="0" />
+  </Rel>
+  <EnumEnum>
+    <IObject UID="e1WBS_Documents" Name="WBS Documents" Description="" />
+    <IEnumEnum EnumNumber="16" />
+    <ISchemaObj />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="XmtlDocCategories.PCE_Documents" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="e1XmtlDocCategories" IsRequired="False" DefUID="Contains" UID2="e1PCE_Documents" OrderValue="0" />
+  </Rel>
+  <EnumEnum>
+    <IObject UID="e1Process_Documents" Name="Process Documents" Description="" />
+    <IEnumEnum EnumNumber="12" />
+    <ISchemaObj />
+  </EnumEnum>
+  <EnumEnum>
+    <IObject UID="e1P&amp;ID_Documents" Name="P&amp;ID Documents" Description="" />
+    <IEnumEnum EnumNumber="7" />
+    <ISchemaObj />
+  </EnumEnum>
+  <EnumEnum>
+    <IObject UID="e1Electrical_Documents" Name="Electrical Documents" Description="" />
+    <IEnumEnum EnumNumber="3" />
+    <ISchemaObj />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="XmtlDocCategories.Project_Engineering_Documents" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="e1XmtlDocCategories" IsRequired="False" DefUID="Contains" UID2="e1Project_Engineering_Documents" OrderValue="0" />
+  </Rel>
+  <Rel>
+    <IObject UID="XmtlDocCategories.Electrical_Documents" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="e1XmtlDocCategories" IsRequired="False" DefUID="Contains" UID2="e1Electrical_Documents" OrderValue="0" />
+  </Rel>
+  <EnumEnum>
+    <IObject UID="e1Purchasing_Documents" Name="Purchasing Documents" Description="" />
+    <IEnumEnum EnumNumber="15" />
+    <ISchemaObj />
+  </EnumEnum>
+  <EnumEnum>
+    <IObject UID="e1Instrument_Documents" Name="Instrument Documents" Description="" />
+    <IEnumEnum EnumNumber="6" />
+    <ISchemaObj />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="XmtlDocCategories.PBS_Documents" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="e1XmtlDocCategories" IsRequired="False" DefUID="Contains" UID2="e1PBS_Documents" OrderValue="0" />
+  </Rel>
+  <EnumEnum>
+    <IObject UID="e1PCE_Documents" Name="PCE Documents" Description="" />
+    <IEnumEnum EnumNumber="9" />
+    <ISchemaObj />
+  </EnumEnum>
+  <EnumEnum>
+    <IObject UID="e1Process_Control_Documents" Name="Process Control Documents" Description="" />
+    <IEnumEnum EnumNumber="11" />
+    <ISchemaObj />
+  </EnumEnum>
+  <EnumEnum>
+    <IObject UID="e1Dimensional_Data_Documents" Name="Dimensional Data Documents" Description="" />
+    <IEnumEnum EnumNumber="2" />
+    <ISchemaObj />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="XmtlDocCategories.Process_Secure_Documents" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="e1XmtlDocCategories" IsRequired="False" DefUID="Contains" UID2="e1Process_Secure_Documents" OrderValue="0" />
+  </Rel>
+  <Rel>
+    <IObject UID="XmtlDocCategories.Process_Control_Documents" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="e1XmtlDocCategories" IsRequired="False" DefUID="Contains" UID2="e1Process_Control_Documents" OrderValue="0" />
+  </Rel>
+  <Rel>
+    <IObject UID="XmtlDocCategories.Dimensional_Data_Documents" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="e1XmtlDocCategories" IsRequired="False" DefUID="Contains" UID2="e1Dimensional_Data_Documents" OrderValue="0" />
+  </Rel>
+  <EnumEnum>
+    <IObject UID="e1Project_Engineering_Documents" Name="Project Engineering Documents" Description="" />
+    <IEnumEnum EnumNumber="14" />
+    <ISchemaObj />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="XmtlDocCategories.P&amp;ID_Documents" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="e1XmtlDocCategories" IsRequired="False" DefUID="Contains" UID2="e1P&amp;ID_Documents" OrderValue="0" />
+  </Rel>
+  <EnumEnum>
+    <IObject UID="e1General_Documents" Name="General Documents" Description="" />
+    <IEnumEnum EnumNumber="5" />
+    <ISchemaObj />
+  </EnumEnum>
+  <Rel>
+    <IObject UID="XmtlDocCategories.WBS_Documents" Name="" Description="" />
+    <ISchemaObj />
+    <IRel UID1="e1XmtlDocCategories" IsRequired="False" DefUID="Contains" UID2="e1WBS_Documents" OrderValue="0" />
+  </Rel>
+</Container>

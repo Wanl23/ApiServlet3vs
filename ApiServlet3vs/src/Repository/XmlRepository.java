@@ -12,9 +12,10 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+
 public class XmlRepository { 	
 	
-	static final String SPF_SCHEMA = "/SCHEMA";
+	static final String SPF_SCHEMA = System.getenv("SPF_SCHEMA");
 	private ArrayList<String> paths = new ArrayList<>();
 	
 	//putting all maps after parsing in one
@@ -47,6 +48,7 @@ public class XmlRepository {
 		
 		return json += "}";
 	} 
+	
 		//parsing xml file
 		private Map<String, String> getDataFromFile(String filePath) throws ParserConfigurationException, IOException, SAXException {
         Map<String, String> map = new HashMap<String, String>();
@@ -60,19 +62,20 @@ public class XmlRepository {
         for(int i = 0; i < nodeList.getLength(); i++) {
             if(nodeList.item(i).getNodeType() == Element.ELEMENT_NODE) {
                 Element node = (Element)nodeList.item(i);
-                NodeList childList = node.getChildNodes();
-                for(int j = 0; j < childList.getLength(); j ++){
-                    if(childList.item(j).getNodeType() == Element.ELEMENT_NODE) {
-                        Element childListElement = (Element) childList.item(j);
-                        String uid = childListElement.getAttribute("UID");
-                        String name = childListElement.getAttribute("Name");
+                NodeList iObjectList = node.getElementsByTagName("IObject");
+                for(int j = 0; j < iObjectList.getLength(); j++) {
+                	if(iObjectList.item(j).getNodeType() == Element.ELEMENT_NODE) {
+                		Element iObjectElement = (Element)iObjectList.item(j);
+                		String uid = iObjectElement.getAttribute("UID");
+                        String name = iObjectElement.getAttribute("Name");
                         map.put(uid, name);
-                    }
-                }
+                	}
+                }                
             }
         }
         return map;
     }
+		
 	//get absolute paths to all files
 	private void getFilePaths(File folder)
 	{
